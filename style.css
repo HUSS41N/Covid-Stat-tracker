@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Archivo', sans-serif;
+}
+
+#main{
+    min-height: 80vh;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-input {
+    border: 1px solid black;
+    width: 50%;
+}
+.main-input input {
+    padding: 2rem;
+    border: none;
+    width: 90%;
+}
+.main-input input:focus{
+    outline: none;
+}
+.main-input button{
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+}
+.main-input button:hover{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.display-data{
+    margin: 2rem;
+}
+.display-data table{
+    border: 1px solid black;
+}
+.display-data table,tr,td{
+    padding: 3rem;
+    border: 1px solid black;
+    font-size: 2rem;
+}
+table{
+    background-color: aquamarine;
+}
+#cases{
+    background-color: #f5873d;
+}
+#recovered{
+    background-color: #64cc52;
+}
+#deaths{
+    background-color: #f52c2c;
+}
+.unactive{
+    visibility: hidden;
+}
+#main h1{
+    margin: 4rem;
+    font-size: 4rem;
+}
+@media screen and (max-width: 550px){
+    .main-input{
+        width: 100%;
+    }
+    .main-input input{
+        width: 80%;
+    }
+    .display-data table {
+        width: 100%;
+    }
+    .display-data table,tr,td{
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <script src="https://kit.fontawesome.com/4eb06f28f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Covid Tracker</title>
+</head>
+<body>
+    <main id="main">
+        <h1 align="center">Covid Tracker</h1>
+        <div class="main-input">
+            <input type="text" placeholder="search" id="user_input">
+            <button type="submit" onclick="getJSONCovidData()"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="display-data unactive" id="unactive">
+            <table>
+                <tr>
+                    <th>Total Cases</th>
+                    <th>Total Recovered</th>
+                    <th>Total Deaths</th>
+                </tr>
+                <tr>
+                    <td id="cases">999999</td>
+                    <td id="recovered">888888</td>
+                    <td id="deaths">666666</td>
+                  </tr>         
+            </table>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
